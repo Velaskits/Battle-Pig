@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b8fa81aa4c73fd74d9b621e4047fa00f
+guid: 48f6c5a5923dd51408e2ea30d11cf63f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -81,6 +81,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -106,30 +119,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mapa-removebg-preview_0
+      name: VudaJabali_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 401
-        width: 471
-        height: 75
+        x: 32
+        y: 31
+        width: 72
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4582d13671426df498cbca6583b976b6
-      internalID: -1590568674
+      spriteID: 2e669ea8c5052bd4a831763a6b610dc3
+      internalID: 1505368738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mapa-removebg-preview_1
+      name: VudaJabali_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 310
-        width: 469
-        height: 70
+        x: 123
+        y: 31
+        width: 72
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44b3e965a7c947642a68f7d723a02f4c
-      internalID: -1682565066
+      spriteID: 4da498399376eec42b178655619b42ed
+      internalID: 1505850745
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mapa-removebg-preview_2
+      name: VudaJabali_2
       rect:
         serializedVersion: 2
-        x: 16
-        y: 219
-        width: 468
-        height: 69
+        x: 214
+        y: 31
+        width: 72
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fb8fc9f01ce34640a906614c2ddf870
-      internalID: 599400531
+      spriteID: 63f820640d755a545aaf1daac291e9ee
+      internalID: -1882988229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mapa-removebg-preview_3
+      name: VudaJabali_3
       rect:
         serializedVersion: 2
-        x: 16
-        y: 127
-        width: 468
-        height: 70
+        x: 306
+        y: 31
+        width: 72
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 161ba9e73d4ae1e4db7c577ca293bc26
-      internalID: -480059659
+      spriteID: a7061d5fba0e2994b86c6ca502f8314d
+      internalID: 105295958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mapa-removebg-preview_4
+      name: VudaJabali_4
       rect:
         serializedVersion: 2
-        x: 16
-        y: 24
-        width: 468
-        height: 81
+        x: 397
+        y: 31
+        width: 71
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,8 +221,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6489c5b42c9b5ac48a3321f5da460e49
-      internalID: 12388425
+      spriteID: 0413c1b2c3f827b4d82cfa0343f2243b
+      internalID: 386856825
       vertices: []
       indices: 
       edges: []
@@ -238,11 +238,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Mapa-removebg-preview_0: -1590568674
-      Mapa-removebg-preview_1: -1682565066
-      Mapa-removebg-preview_2: 599400531
-      Mapa-removebg-preview_3: -480059659
-      Mapa-removebg-preview_4: 12388425
+      VudaJabali_0: 1505368738
+      VudaJabali_1: 1505850745
+      VudaJabali_2: -1882988229
+      VudaJabali_3: 105295958
+      VudaJabali_4: 386856825
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

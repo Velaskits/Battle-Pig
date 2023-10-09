@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b8fa81aa4c73fd74d9b621e4047fa00f
+guid: 669388369bba1d345b0353e683f21767
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -81,6 +81,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -106,30 +119,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mapa-removebg-preview_0
+      name: chuletas_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 401
-        width: 471
-        height: 75
+        x: 28
+        y: 132
+        width: 101
+        height: 94
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4582d13671426df498cbca6583b976b6
-      internalID: -1590568674
+      spriteID: 40b3091af1f594e4a8efb281a20edbea
+      internalID: 989805387
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mapa-removebg-preview_1
+      name: chuletas_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 310
-        width: 469
-        height: 70
+        x: 147
+        y: 134
+        width: 94
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,19 +158,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44b3e965a7c947642a68f7d723a02f4c
-      internalID: -1682565066
+      spriteID: a96f678b4d8cfbb4ebc57949f7a318e8
+      internalID: 130825039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mapa-removebg-preview_2
+      name: chuletas_2
       rect:
         serializedVersion: 2
-        x: 16
-        y: 219
-        width: 468
+        x: 259
+        y: 156
+        width: 100
         height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fb8fc9f01ce34640a906614c2ddf870
-      internalID: 599400531
+      spriteID: 66c6ec23c277d6242ac42578992cea0c
+      internalID: 723558337
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mapa-removebg-preview_3
+      name: chuletas_3
       rect:
         serializedVersion: 2
-        x: 16
-        y: 127
-        width: 468
-        height: 70
+        x: 381
+        y: 134
+        width: 93
+        height: 94
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 161ba9e73d4ae1e4db7c577ca293bc26
-      internalID: -480059659
+      spriteID: aacab254175fed34b94345f23f633f82
+      internalID: 1259680079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mapa-removebg-preview_4
+      name: chuletas_4
       rect:
         serializedVersion: 2
-        x: 16
-        y: 24
-        width: 468
-        height: 81
+        x: 31
+        y: 26
+        width: 95
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,8 +221,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6489c5b42c9b5ac48a3321f5da460e49
-      internalID: 12388425
+      spriteID: f8555f71c163ea0478f11dab4beb9abe
+      internalID: -1427732752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chuletas_5
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 37
+        width: 95
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864997be8ab4e2448ae8903a32b816d5
+      internalID: 308716043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chuletas_6
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 43
+        width: 100
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e4d34c94b367d4cbf3ee48496750b3
+      internalID: -1032405733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chuletas_7
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 38
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a87a3d36f63aaf243919106916650650
+      internalID: -1251000653
       vertices: []
       indices: 
       edges: []
@@ -238,11 +301,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Mapa-removebg-preview_0: -1590568674
-      Mapa-removebg-preview_1: -1682565066
-      Mapa-removebg-preview_2: 599400531
-      Mapa-removebg-preview_3: -480059659
-      Mapa-removebg-preview_4: 12388425
+      chuletas_0: 989805387
+      chuletas_1: 130825039
+      chuletas_2: 723558337
+      chuletas_3: 1259680079
+      chuletas_4: -1427732752
+      chuletas_5: 308716043
+      chuletas_6: -1032405733
+      chuletas_7: -1251000653
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
