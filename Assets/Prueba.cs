@@ -5,6 +5,7 @@ using UnityEngine;
 public class Prueba : MonoBehaviour
 {
     // Start is called before the first frame update
+    private float velocity = 5f;
     void Start()
     {
         
@@ -14,5 +15,6 @@ public class Prueba : MonoBehaviour
     void Update()
     {
         
+       //Movimineto del jugador
     }
 }
