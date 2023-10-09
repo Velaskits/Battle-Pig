@@ -1,0 +1,1007 @@
+fileFormatVersion: 2
+guid: 74c2e153d1bf3e64eb066a874089a230
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 399
+        width: 59
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e95d46ebf6eb54d9770266a1d131c2
+      internalID: 565718967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 402
+        width: 31
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c2990059ede204983303b1e57551c6
+      internalID: 1579928812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 402
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 318a62a55a373c348acf6ac908bcf39f
+      internalID: 2070551962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 402
+        width: 33
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bb150e2855b2aa4f8719b1c743ecffc
+      internalID: 708975065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 402
+        width: 33
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 657a88786cc3cdf4b99c6ae84b19224c
+      internalID: 1710837235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 402
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e2a9e2543dbbf4e8c037c625477407
+      internalID: -128690600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 402
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1729e16dc3a6ff747b595418c7657334
+      internalID: 16258190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 403
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9939b2261bd74e142bdb055ef568ef48
+      internalID: 459793281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 403
+        width: 41
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c06b7be71fa8e4a97e1b386547f066
+      internalID: 1326326150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 348
+        width: 70
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a0fedb3275d0543ac726d25fc1a9b1
+      internalID: -1384906068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 348
+        width: 78
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ec5732c7cfac44a99fd99f72be7897
+      internalID: 1428618675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 348
+        width: 83
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdd9ec03ec5df40488e40aa1808b9591
+      internalID: -1969988555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 352
+        width: 83
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29feef13acd084b4f89ca1fb22371e76
+      internalID: -1115433151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 348
+        width: 78
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1879fe32d547707418c5d26552043328
+      internalID: -1383256072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 296
+        width: 71
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 886a7670712ecd4468108b5f8ee54778
+      internalID: -12963559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 296
+        width: 78
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2de51915c8a3447bc01445d101e3a2
+      internalID: 1369458500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 296
+        width: 80
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: debead5e8ab68a24b90c27ddcbb6065d
+      internalID: 1200981378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 296
+        width: 80
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5cd035f1f5065b42905499603733650
+      internalID: -1743309025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 296
+        width: 72
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 790dbca4ecd154e4c8c88e5c5577630f
+      internalID: 1438712092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 296
+        width: 72
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea59c65888bf4404bb9f2d5d1d071aff
+      internalID: 1110663176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 225
+        width: 66
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 545343711f5bae7499257729b237a647
+      internalID: -943040962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 225
+        width: 57
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4fbff67822b92342bbb168c666c2a5d
+      internalID: -618975742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 225
+        width: 66
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 114d459aec9df2f4386099c621da0eaf
+      internalID: 2123212534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_23
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 170
+        width: 70
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f2e185e9215c0488451f4555742e75
+      internalID: 921789926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_24
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 170
+        width: 72
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d650f64118c8b348bf7bd105a2b61f9
+      internalID: -586615695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_25
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 154
+        width: 56
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c0ee01c5b4364478b8d861c3f012c8
+      internalID: -660454591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_26
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 159
+        width: 75
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d96aa14a7b158724b976e9b48656b34c
+      internalID: 2009592545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_27
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 104
+        width: 59
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2fd1d09127ae224a8253610fa2e17a7
+      internalID: -101815051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_28
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 104
+        width: 60
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b862307eed5d644986c06d065e8c394
+      internalID: -10542571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_29
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 104
+        width: 61
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0baa82d4a13805e45ae5e38c8fe91fa1
+      internalID: -2145497629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_30
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 104
+        width: 63
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c186d08bd519d4048b4c88089a77ee51
+      internalID: -1810853976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_31
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 104
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 126c3bbb1d0a1d14986b34329e542334
+      internalID: -475682328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_32
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 104
+        width: 63
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd50bd14376ebc46b5389d1c8195701
+      internalID: 768815894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_33
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 32
+        width: 45
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba9f417111f3f2345b2a588e78379178
+      internalID: -139295376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_34
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 32
+        width: 34
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c60c6110950a1654fb90e1a79cc3cdd3
+      internalID: -1608569457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_35
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 32
+        width: 45
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e972c31c335fc34a89e121ea4c7a2ca
+      internalID: 955846871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_36
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 31
+        width: 69
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66affec281946f84abc3d083349ce628
+      internalID: -2029907081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_37
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 32
+        width: 70
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693f9b0558bee7f41b35d4376c75212d
+      internalID: -661551280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_38
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 32
+        width: 70
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 154696b021b98d249a77479f13be93ee
+      internalID: -1190967469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobos-removebg-preview_39
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 32
+        width: 69
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b3ce810f74137649a92fb0ffd73256a
+      internalID: 1191262909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Lobos-removebg-preview_0: 565718967
+      Lobos-removebg-preview_1: 1579928812
+      Lobos-removebg-preview_10: 1428618675
+      Lobos-removebg-preview_11: -1969988555
+      Lobos-removebg-preview_12: -1115433151
+      Lobos-removebg-preview_13: -1383256072
+      Lobos-removebg-preview_14: -12963559
+      Lobos-removebg-preview_15: 1369458500
+      Lobos-removebg-preview_16: 1200981378
+      Lobos-removebg-preview_17: -1743309025
+      Lobos-removebg-preview_18: 1438712092
+      Lobos-removebg-preview_19: 1110663176
+      Lobos-removebg-preview_2: 2070551962
+      Lobos-removebg-preview_20: -943040962
+      Lobos-removebg-preview_21: -618975742
+      Lobos-removebg-preview_22: 2123212534
+      Lobos-removebg-preview_23: 921789926
+      Lobos-removebg-preview_24: -586615695
+      Lobos-removebg-preview_25: -660454591
+      Lobos-removebg-preview_26: 2009592545
+      Lobos-removebg-preview_27: -101815051
+      Lobos-removebg-preview_28: -10542571
+      Lobos-removebg-preview_29: -2145497629
+      Lobos-removebg-preview_3: 708975065
+      Lobos-removebg-preview_30: -1810853976
+      Lobos-removebg-preview_31: -475682328
+      Lobos-removebg-preview_32: 768815894
+      Lobos-removebg-preview_33: -139295376
+      Lobos-removebg-preview_34: -1608569457
+      Lobos-removebg-preview_35: 955846871
+      Lobos-removebg-preview_36: -2029907081
+      Lobos-removebg-preview_37: -661551280
+      Lobos-removebg-preview_38: -1190967469
+      Lobos-removebg-preview_39: 1191262909
+      Lobos-removebg-preview_4: 1710837235
+      Lobos-removebg-preview_5: -128690600
+      Lobos-removebg-preview_6: 16258190
+      Lobos-removebg-preview_7: 459793281
+      Lobos-removebg-preview_8: 1326326150
+      Lobos-removebg-preview_9: -1384906068
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
