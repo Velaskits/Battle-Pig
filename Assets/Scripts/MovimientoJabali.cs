@@ -12,7 +12,7 @@ public class MovimientoJabali : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _velJab = 7;  
+        _velJab = 7;
     }
 
     // Update is called once per frame
@@ -40,7 +40,12 @@ public class MovimientoJabali : MonoBehaviour
             gameObject.SetActive(false);
             CambiarEscena1();
         }
-        
+
+        if (other.tag == "monedas")
+        {
+            contador++;
+            ContadorDeMonedas.text = contador.ToString();
+        }
     }
     private void MovimientoJab()
     {

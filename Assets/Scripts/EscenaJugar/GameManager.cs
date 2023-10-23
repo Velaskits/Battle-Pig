@@ -8,13 +8,22 @@ public class GameManager : MonoBehaviour
     public GameObject TextoInstrucciones1;
     public GameObject TextoInstrucciones2;
 
-    private int contador = 0;
+    private int contador = 1;
     //variables de la historia.
     public GameObject PetterHistoria1;
     public GameObject PetterHistoria2;
     public GameObject PetterHistoria3;
     public GameObject PetterHistoria4;
     public GameObject PetterHistoria5;
+    public GameObject RioMapaHistoria;
+    public GameObject MapaHistoria;
+    public GameObject TextoHistoria1;
+    public GameObject TextoHistoria2;
+    public GameObject TextoHistoria3;
+    public GameObject TextoHistoria4;
+    public GameObject TextoHistoria5;
+    public GameObject BotonSiguienteTexto;
+    public GameObject ButtonSiguiente;
 
     //Lista de casos de la historia.
     public enum EstatsGameManagerHistoria
@@ -45,6 +54,7 @@ public class GameManager : MonoBehaviour
 
         //Esto es el estado de las escenas de la historia.
         _estatGameManagerHistoria = EstatsGameManagerHistoria.escena1;
+        contador = 1;
     }
 
     // Update is called once per frame
@@ -82,6 +92,16 @@ public class GameManager : MonoBehaviour
                 PetterHistoria3.SetActive(false);
                 PetterHistoria4.SetActive(false);
                 PetterHistoria5.SetActive(false);
+                TextoHistoria1.SetActive(false);
+                TextoHistoria2.SetActive(true);
+                TextoHistoria3.SetActive(false);
+                TextoHistoria4.SetActive(false);
+                TextoHistoria5.SetActive(false);
+                RioMapaHistoria.SetActive(true);
+                MapaHistoria.SetActive(false);
+                BotonSiguienteTexto.SetActive(true);
+                ButtonSiguiente.SetActive(true);
+                Debug.Log(_estatGameManagerHistoria);
                 break;
 
             case EstatsGameManagerHistoria.escena2:
@@ -90,6 +110,15 @@ public class GameManager : MonoBehaviour
                 PetterHistoria3.SetActive(false);
                 PetterHistoria4.SetActive(false);
                 PetterHistoria5.SetActive(false);
+                TextoHistoria1.SetActive(false);
+                TextoHistoria2.SetActive(true);
+                TextoHistoria3.SetActive(false);
+                TextoHistoria4.SetActive(false);
+                TextoHistoria5.SetActive(false);
+                RioMapaHistoria.SetActive(true);
+                MapaHistoria.SetActive(false);
+                BotonSiguienteTexto.SetActive(true);
+                ButtonSiguiente.SetActive(true);
                 break;
 
             case EstatsGameManagerHistoria.escena3:
@@ -98,6 +127,15 @@ public class GameManager : MonoBehaviour
                 PetterHistoria3.SetActive(true);
                 PetterHistoria4.SetActive(false);
                 PetterHistoria5.SetActive(false);
+                TextoHistoria1.SetActive(false);
+                TextoHistoria2.SetActive(false);
+                TextoHistoria3.SetActive(true);
+                TextoHistoria4.SetActive(false);
+                TextoHistoria5.SetActive(false);
+                RioMapaHistoria.SetActive(true);
+                MapaHistoria.SetActive(false);
+                BotonSiguienteTexto.SetActive(true);
+                ButtonSiguiente.SetActive(true);
                 break;
 
             case EstatsGameManagerHistoria.escena4:
@@ -106,6 +144,15 @@ public class GameManager : MonoBehaviour
                 PetterHistoria3.SetActive(false);
                 PetterHistoria4.SetActive(true);
                 PetterHistoria5.SetActive(false);
+                TextoHistoria1.SetActive(false);
+                TextoHistoria2.SetActive(false);
+                TextoHistoria3.SetActive(false);
+                TextoHistoria4.SetActive(true);
+                TextoHistoria5.SetActive(false);
+                RioMapaHistoria.SetActive(false);
+                MapaHistoria.SetActive(true);
+                BotonSiguienteTexto.SetActive(true);
+                ButtonSiguiente.SetActive(true);
                 break;
 
             case EstatsGameManagerHistoria.escena5:
@@ -114,6 +161,15 @@ public class GameManager : MonoBehaviour
                 PetterHistoria3.SetActive(false);
                 PetterHistoria4.SetActive(false);
                 PetterHistoria5.SetActive(true);
+                TextoHistoria1.SetActive(false);
+                TextoHistoria2.SetActive(false);
+                TextoHistoria3.SetActive(false);
+                TextoHistoria4.SetActive(false);
+                TextoHistoria5.SetActive(true);
+                RioMapaHistoria.SetActive(false);
+                MapaHistoria.SetActive(true);
+                BotonSiguienteTexto.SetActive(false);
+                ButtonSiguiente.SetActive(false);
                 break;
         }
         contador++;
@@ -128,6 +184,7 @@ public class GameManager : MonoBehaviour
 
     public void PassarAEscena2()
     {
+        Debug.Log("Click OK");
         if (contador == 1)
         {
             _estatGameManagerHistoria = EstatsGameManagerHistoria.escena2;
