@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MovimientoJabali : MonoBehaviour
 {
     public float _velJab;
     public GameObject chuletas_0;
+    public bool finJuego;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +23,7 @@ public class MovimientoJabali : MonoBehaviour
     // Aqui lo que hacemos es cuando el jabali es tocado por el cazador se destruye
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "cazador")
+        if(other.tag == "cazador"  )
         {
             gameObject.SetActive(false);
 
@@ -29,6 +32,13 @@ public class MovimientoJabali : MonoBehaviour
             carne.transform.position = transform.position;
             carne.SetActive(true);
             //llamar gamemanager hacer funcion para llamr al Game Over que sera una pantalla.
+            Invoke("CambiarEscena", 5f);
+            
+
+        }else if (other.tag == "arbol")
+        {
+            gameObject.SetActive(false);
+            CambiarEscena1();
         }
         
     }
@@ -68,9 +78,21 @@ public class MovimientoJabali : MonoBehaviour
 
 
         transform.position = novaPos;
+        
 
+  
     }
 
-   
+    void CambiarEscena()
+    {
+        // Carga la nueva escena (reemplaza "NombreDeTuEscena" con el nombre real de tu escena)
+        SceneManager.LoadScene("GameOver");
+    }
+    void CambiarEscena1()
+    {
+        // Carga la nueva escena (reemplaza "NombreDeTuEscena" con el nombre real de tu escena)
+        SceneManager.LoadScene("Win");
+    }
+
 
 }

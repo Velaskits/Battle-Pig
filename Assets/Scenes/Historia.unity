@@ -1066,6 +1066,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 628615537}
   m_CullTransparentMesh: 1
+--- !u!1 &674085486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 674085488}
+  - component: {fileID: 674085487}
+  m_Layer: 0
+  m_Name: ScenaControl
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &674085487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674085486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe2f917ce3505b4191012c30180439c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &674085488
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674085486}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.13683754, y: -0.6136432, z: 2.6616676}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &727603093
 GameObject:
   m_ObjectHideFlags: 0
@@ -1232,7 +1276,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 803756150}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 674085487}
+        m_TargetAssemblyTypeName: CambioPantalla, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SampleScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &803756150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2433,7 +2489,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2052782425}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 674085487}
+        m_TargetAssemblyTypeName: CambioPantalla, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Jugar
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2052782425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2621,3 +2689,4 @@ SceneRoots:
   - {fileID: 1705434828}
   - {fileID: 727603095}
   - {fileID: 1311093829}
+  - {fileID: 674085488}
