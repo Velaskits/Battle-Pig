@@ -8,6 +8,8 @@ public class MovimientoJabali : MonoBehaviour
     public float _velJab;
     public GameObject chuletas_0;
     public bool finJuego;
+    private int contador = 0;
+    public TMPro.TextMeshProUGUI ContadorDeMonedas;
     
     // Start is called before the first frame update
     void Start()
