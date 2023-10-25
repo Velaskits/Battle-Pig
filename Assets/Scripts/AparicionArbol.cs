@@ -18,6 +18,9 @@ public class AparicionArbol : MonoBehaviour
 
     private void aparicion()
     {
-        
+        if (GameObject.Find("jabali") != null)
+        {
+
+        }
     }
 }
