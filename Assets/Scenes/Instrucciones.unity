@@ -263,7 +263,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -86, y: 58.99997}
+  m_AnchoredPosition: {x: -255, y: 208}
   m_SizeDelta: {x: 287.6649, y: 153.3193}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &61492380
@@ -314,8 +314,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -350,7 +350,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -367.49298, w: 0}
+  m_margin: {x: 0, y: 0, z: -789.85626, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -442,7 +442,7 @@ Transform:
   m_GameObject: {fileID: 92140320}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -549.4042, y: -23.43459, z: 0.31968653}
+  m_LocalPosition: {x: -548.58, y: -23.42, z: 0.31968653}
   m_LocalScale: {x: 0.1584, y: 0.1487, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -753,6 +753,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextoInstrucciones1: {fileID: 109997793}
   TextoInstrucciones2: {fileID: 674185106}
+  PetterHistoria1: {fileID: 0}
+  PetterHistoria2: {fileID: 0}
+  PetterHistoria3: {fileID: 0}
+  PetterHistoria4: {fileID: 0}
+  PetterHistoria5: {fileID: 0}
+  RioMapaHistoria: {fileID: 0}
+  MapaHistoria: {fileID: 0}
+  TextoHistoria1: {fileID: 0}
+  TextoHistoria2: {fileID: 0}
+  TextoHistoria3: {fileID: 0}
+  TextoHistoria4: {fileID: 0}
+  TextoHistoria5: {fileID: 0}
+  BotonSiguienteTexto: {fileID: 0}
+  ButtonSiguiente: {fileID: 0}
+  _estatGameManagerHistoria: 0
 --- !u!4 &334608514
 Transform:
   m_ObjectHideFlags: 0
@@ -846,7 +861,7 @@ Transform:
   m_GameObject: {fileID: 396291589}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -550.0742, y: -22.394588, z: 0.31968653}
+  m_LocalPosition: {x: -549.33, y: -22.394588, z: 0.31968653}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -998,7 +1013,7 @@ Transform:
   m_GameObject: {fileID: 507728027}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -546.64417, y: -21.084589, z: 0.31968653}
+  m_LocalPosition: {x: -545.98, y: -21.084589, z: 0.31968653}
   m_LocalScale: {x: 0.58407766, y: 0.5853351, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1136,7 +1151,7 @@ Transform:
   m_GameObject: {fileID: 594438268}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -554.58417, y: -22.354588, z: 0.31968653}
+  m_LocalPosition: {x: -554.37, y: -22.24, z: 0.31968653}
   m_LocalScale: {x: 3.3388, y: 2.8601, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1453,7 +1468,7 @@ Transform:
   m_GameObject: {fileID: 786539399}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -554.5942, y: -20.92459, z: 0.31968653}
+  m_LocalPosition: {x: -554.31, y: -20.82, z: 0.31968653}
   m_LocalScale: {x: 3.1049955, y: 3.1462154, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1721,7 +1736,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -270, y: 185.99997}
+  m_AnchoredPosition: {x: -720, y: 404}
   m_SizeDelta: {x: 309.5811, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1013215351
@@ -1771,8 +1786,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 75
+  m_fontSizeBase: 75
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1807,7 +1822,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -204.42383, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1905,8 +1920,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2055,7 +2070,7 @@ Transform:
   m_GameObject: {fileID: 1118230813}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -554.5642, y: -23.614588, z: 0.31968653}
+  m_LocalPosition: {x: -554.36, y: -23.58, z: 0.31968653}
   m_LocalScale: {x: 3.4799645, y: 2.8068476, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2097,8 +2112,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -212.34473, y: 160.42834}
-  m_SizeDelta: {x: 198.7403, y: 54.9044}
+  m_AnchoredPosition: {x: -239, y: 347}
+  m_SizeDelta: {x: 250.3918, y: 118.7895}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1340596401
 MonoBehaviour:
@@ -2121,11 +2136,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2229,7 +2244,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 1.3835}
+  m_AnchoredPosition: {x: 0, y: -5.9954987}
   m_SizeDelta: {x: 0, y: 11.991}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1363961792
@@ -2786,8 +2801,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -119, y: 36}
-  m_SizeDelta: {x: 222, y: 54.6123}
+  m_AnchoredPosition: {x: -190, y: 75}
+  m_SizeDelta: {x: 350, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1856447577
 MonoBehaviour:
@@ -3088,6 +3103,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextoInstrucciones1: {fileID: 0}
   TextoInstrucciones2: {fileID: 0}
+  PetterHistoria1: {fileID: 0}
+  PetterHistoria2: {fileID: 0}
+  PetterHistoria3: {fileID: 0}
+  PetterHistoria4: {fileID: 0}
+  PetterHistoria5: {fileID: 0}
+  RioMapaHistoria: {fileID: 0}
+  MapaHistoria: {fileID: 0}
+  TextoHistoria1: {fileID: 0}
+  TextoHistoria2: {fileID: 0}
+  TextoHistoria3: {fileID: 0}
+  TextoHistoria4: {fileID: 0}
+  TextoHistoria5: {fileID: 0}
+  BotonSiguienteTexto: {fileID: 0}
+  ButtonSiguiente: {fileID: 0}
+  _estatGameManagerHistoria: 0
 --- !u!1 &1927609219
 GameObject:
   m_ObjectHideFlags: 0
@@ -3228,7 +3258,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -180, y: 188}
+  m_AnchoredPosition: {x: -391, y: 371}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2024220938
@@ -3252,8 +3282,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "El cazador solo puede seguirte y si te toca tendras que esquivar las balas
-    \n\n(!) El cazador no disparar\xE1 hasta que te toque.\n\n\nEl cuervo va siguiendo
-    a nuestro protagonisa indicandole los peligros que puede haber a los alrededores.\n\n\nLas
+    \n\n(!) El cazador no disparar\xE1 hasta que te toque.\n\nEl cuervo va siguiendo
+    a nuestro protagonisa indicandole los peligros que puede haber a los alrededores.\n\nLas
     monedas sirven para restar tiempo \nfinal a tu recorrido.\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3281,8 +3311,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3317,7 +3347,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -493.5287, w: 0}
+  m_margin: {x: 0, y: 0, z: -999.82886, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3409,7 +3439,7 @@ Transform:
   m_GameObject: {fileID: 2110831316}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -549.7017, y: -21.109688, z: 0.31968653}
+  m_LocalPosition: {x: -548.72, y: -21.13, z: 0.31968653}
   m_LocalScale: {x: 0.14346226, y: 0.14341505, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
