@@ -10,10 +10,13 @@ public class MovimientoJabali : MonoBehaviour
     public bool finJuego;
     private int contador = 0;
     public TMPro.TextMeshProUGUI ContadorDeMonedas;
-    
+    public GameObject bolabarroprefabs;
+    public bool miradreta;
+    public GameObject carga_Jabaliprefabs;
     // Start is called before the first frame update
     void Start()
     {
+        miradreta = true;
         _velJab = 7;
     }
 
@@ -21,6 +24,8 @@ public class MovimientoJabali : MonoBehaviour
     void Update()
     {
         MovimientoJab();
+        DispararBola();
+        carga();
     }
     // Aqui lo que hacemos es cuando el jabali es tocado por el cazador se destruye
     private void OnTriggerEnter2D(Collider2D other)
@@ -66,10 +71,12 @@ public class MovimientoJabali : MonoBehaviour
         if (direccioHoritzontal > 0)
         {
             spriteRenderer.flipX = false;
+            miradreta = true;
         }
         else if (direccioHoritzontal < 0)
         {
             spriteRenderer.flipX = true;
+            miradreta = false;
         }
 
         float limitEsquerraX = -Camera.main.orthographicSize * Camera.main.aspect + anchura;//el aspect se utiliza solamente para la anchura
@@ -93,6 +100,10 @@ public class MovimientoJabali : MonoBehaviour
 
   
     }
+    public bool getmiradreta()
+    {
+        return miradreta;
+    }
 
     void CambiarEscena()
     {
@@ -105,4 +116,29 @@ public class MovimientoJabali : MonoBehaviour
         SceneManager.LoadScene("Win");
     }
 
+<<<<<<< Updated upstream
+=======
+    private void DispararBola()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            //Dispara
+            GameObject bala = Instantiate(bolabarroprefabs);//indicamos de que tipo es el objeto
+            Vector2 newPos = transform.position;
+            newPos.x = newPos.x + 2f;
+            bala.transform.position = this.transform.position;
+        }
+    }
+
+    public void carga()
+    {
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            GameObject carga = Instantiate(carga_Jabaliprefabs);//indicamos de que tipo es el objeto
+            Vector2 newPos = transform.position;
+            newPos.x = newPos.x + 2f;
+            carga.transform.position = this.transform.position;
+        }
+    }
+>>>>>>> Stashed changes
 }
