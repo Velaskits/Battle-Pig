@@ -6,6 +6,8 @@ TagManager:
   tags:
   - cazador
   - arbol
+  - jabali
+  - monedas
   layers:
   - Default
   - TransparentFX
@@ -42,4 +44,22 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2385928723
+    locked: 0
+  - name: Midground
+    uniqueID: 383692833
+    locked: 0
+  - name: Foreground
+    uniqueID: 584504239
+    locked: 0
+  - name: PlanoJugador
+    uniqueID: 2372846983
+    locked: 0
+  - name: PlanoMenu
+    uniqueID: 1638267137
+    locked: 0
+  - name: PlanoEntradas
+    uniqueID: 1289976321
     locked: 0

@@ -37,7 +37,11 @@ public class MovimientoJabali : MonoBehaviour
             Invoke("CambiarEscena", 5f);
             
 
-        }else if (other.tag == "arbol")
+        }else if (other.tag == "EntradaCueva1")
+        {
+            gameObject.SetActive(false);
+            CambiarEscena1();
+        }else if (other.tag == "EntradaCueva2")
         {
             gameObject.SetActive(false);
             CambiarEscena1();
@@ -100,6 +104,5 @@ public class MovimientoJabali : MonoBehaviour
         // Carga la nueva escena (reemplaza "NombreDeTuEscena" con el nombre real de tu escena)
         SceneManager.LoadScene("Win");
     }
-
 
 }
