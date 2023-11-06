@@ -17,7 +17,7 @@ public class MovimientoJabali : MonoBehaviour
     void Start()
     {
         miradreta = true;
-        _velJab = 7;
+        _velJab = 4;
     }
 
     // Update is called once per frame
@@ -116,8 +116,7 @@ public class MovimientoJabali : MonoBehaviour
         SceneManager.LoadScene("Win");
     }
 
-<<<<<<< Updated upstream
-=======
+
     private void DispararBola()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -138,7 +137,38 @@ public class MovimientoJabali : MonoBehaviour
             Vector2 newPos = transform.position;
             newPos.x = newPos.x + 2f;
             carga.transform.position = this.transform.position;
+
+            if (getmiradreta())
+            {
+                SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+                spriteRenderer.flipX = false;
+                InvokeRepeating("dash", 0f, 0.005f);
+                Invoke("stopDash", 0.15f);
+            }
+            else if (!getmiradreta())
+            {
+                SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+                spriteRenderer.flipX = true;
+                InvokeRepeating("dash", 0f, 0.005f);
+                Invoke("stopDash", 0.15f);
+            }
         }
     }
->>>>>>> Stashed changes
+    //Esta funcion lo que hace es cancelar el dash
+    private void stopDash()
+    {
+        CancelInvoke("dash");
+    }
+    //Aqui lo que hacemos es cuando se ejecute esta funcion el personaje se movera a la direccion que este mirando
+    void dash()
+    {
+
+        if (getmiradreta())
+            this.transform.position = new Vector2(this.transform.position.x + 0.05f, this.transform.position.y);
+        else
+            this.transform.position = new Vector2(this.transform.position.x - 0.05f, this.transform.position.y);
+    }
+
+
+
 }
