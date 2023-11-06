@@ -8,6 +8,7 @@ TagManager:
   - arbol
   - jabali
   - monedas
+  - cuervo
   layers:
   - Default
   - TransparentFX

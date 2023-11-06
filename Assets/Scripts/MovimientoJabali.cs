@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Tilemaps;
 
 public class MovimientoJabali : MonoBehaviour
 {
@@ -13,11 +14,15 @@ public class MovimientoJabali : MonoBehaviour
     public GameObject bolabarroprefabs;
     public bool miradreta;
     public GameObject carga_Jabaliprefabs;
+    private Rigidbody2D rb;
+    public TilemapCollider2D tilemapCollider;
     // Start is called before the first frame update
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         miradreta = true;
         _velJab = 7;
+        // Encuentra el TilemapCollider2D en tu escena
     }
 
     // Update is called once per frame
@@ -30,7 +35,7 @@ public class MovimientoJabali : MonoBehaviour
     // Aqui lo que hacemos es cuando el jabali es tocado por el cazador se destruye
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "cazador"  )
+        if (other.tag == "cazador")
         {
             gameObject.SetActive(false);
 
@@ -40,16 +45,8 @@ public class MovimientoJabali : MonoBehaviour
             carne.SetActive(true);
             //llamar gamemanager hacer funcion para llamr al Game Over que sera una pantalla.
             Invoke("CambiarEscena", 5f);
-            
 
-        }else if (other.tag == "EntradaCueva1")
-        {
-            gameObject.SetActive(false);
-            CambiarEscena1();
-        }else if (other.tag == "EntradaCueva2")
-        {
-            gameObject.SetActive(false);
-            CambiarEscena1();
+
         }
 
         if (other.tag == "monedas")
@@ -57,26 +54,27 @@ public class MovimientoJabali : MonoBehaviour
             contador++;
             ContadorDeMonedas.text = contador.ToString();
         }
+
+
     }
     private void MovimientoJab()
     {
+
         float direccioHoritzontal = Input.GetAxisRaw("Horizontal");
         float direccioVertical = Input.GetAxisRaw("Vertical");
-        Vector2 direccioIndicada = new Vector2(direccioHoritzontal, direccioVertical).normalized;//mover el jabali
+        Vector2 direccioIndicada = new Vector2(direccioHoritzontal, direccioVertical).normalized;
 
-        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();//tenemos toda la informacion del componente
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
         float anchura = spriteRenderer.bounds.size.x / 2;
         float Altura = spriteRenderer.bounds.size.y / 2;
-        // Este if hace que el jabali cambie de lado es decir que la imagen cambia de sentido
+
         if (direccioHoritzontal > 0)
         {
             spriteRenderer.flipX = false;
-            miradreta = true;
         }
         else if (direccioHoritzontal < 0)
         {
             spriteRenderer.flipX = true;
-            miradreta = false;
         }
 
         float limitEsquerraX = -Camera.main.orthographicSize * Camera.main.aspect + anchura;//el aspect se utiliza solamente para la anchura
@@ -85,20 +83,16 @@ public class MovimientoJabali : MonoBehaviour
         float limitAbajoY = -Camera.main.orthographicSize + Altura;
         float limitArribaY = Camera.main.orthographicSize - Altura;
 
-        Vector2 novaPos = transform.position; // Ens retorna la posicion actual del Jabali
-        novaPos += direccioIndicada * _velJab * Time.deltaTime;
+        Vector2 velocidad = direccioIndicada * _velJab;
 
+        // Aplica las colisiones del Tilemap Collider 2D
+        rb.velocity = velocidad;
+        tilemapCollider.usedByComposite = true; // Activa el uso del TilemapCollider2D
 
-        //Para ponerlimites  y clamp pones el valor que quieras para poner los limites
+        Vector2 novaPos = rb.position;
         novaPos.x = Mathf.Clamp(novaPos.x, limitEsquerraX, limitDretaX);
         novaPos.y = Mathf.Clamp(novaPos.y, limitAbajoY, limitArribaY);
 
-
-
-        transform.position = novaPos;
-        
-
-  
     }
     public bool getmiradreta()
     {
@@ -116,8 +110,6 @@ public class MovimientoJabali : MonoBehaviour
         SceneManager.LoadScene("Win");
     }
 
-<<<<<<< Updated upstream
-=======
     private void DispararBola()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -140,5 +132,4 @@ public class MovimientoJabali : MonoBehaviour
             carga.transform.position = this.transform.position;
         }
     }
->>>>>>> Stashed changes
 }
