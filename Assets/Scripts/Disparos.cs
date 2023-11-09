@@ -12,7 +12,7 @@ public class Disparos : MonoBehaviour
     {
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
         GameObject jabali = GameObject.Find("jabali");
-        bool direcciodreta = jabali.GetComponent<MovimientoJabali>().getmiradreta();
+        bool direcciodreta = jabali.GetComponent<JabaliPantalla2>().getmiradreta();
         if (direcciodreta)
         {
             Velocity = 5f;
@@ -35,16 +35,21 @@ public class Disparos : MonoBehaviour
         //Lo que hace este codigo es cuando la bala llegue al limite se borre directamente
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();//tenemos toda la informacion del componente
         float costado = spriteRenderer.bounds.size.x / 2;
-        float limitcostatX = Camera.main.orthographicSize;
+        Vector2 costatInferiorEsquerra = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
+        Vector2 limitcostatX = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
         transform.position = novaPos;
-        if (novaPos.x >= limitcostatX)
+        if (transform.position.x >= limitcostatX.x)
         {
             Destroy(gameObject);
         }
-       
-       
-        
-       
+        else if (transform.position.x <= costatInferiorEsquerra.x)
+        {
+            Destroy(gameObject);
+        }
+
+
+
+
     }
 
     
