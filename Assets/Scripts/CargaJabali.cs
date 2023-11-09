@@ -7,7 +7,7 @@ public class CargaJabali : MonoBehaviour
 {
     public Transform carga; // La referencia al objeto de la carga
     public float velocidad = 5f; // Velocidad de movimiento del personaje
-    public float distanciaMovimiento = 1.2f; // Distancia que se moverá el personaje y la carga
+    public float distanciaMovimiento = 1.2f; // Distancia que se moverï¿½ el personaje y la carga
     private bool miraDretra;
     void Start()
     {
@@ -22,8 +22,8 @@ public class CargaJabali : MonoBehaviour
             // Mueve la carga junto con el personaje
             if (carga != null)
             {
-                carga.position = transform.position; // La posición de la carga se iguala a la del personaje
-                Destroy(carga.gameObject);// Destruye el objeto de carga después de usarlo
+                carga.position = transform.position; // La posiciï¿½n de la carga se iguala a la del personaje
+                Destroy(carga.gameObject);// Destruye el objeto de carga despuï¿½s de usarlo
             }
             GameObject Jabali = GameObject.Find("jabali");
             // Multiplica el desplazamiento actual por 2 (0.6f * 2)

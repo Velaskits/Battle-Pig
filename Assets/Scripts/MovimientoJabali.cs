@@ -109,8 +109,11 @@ public class MovimientoJabali : MonoBehaviour
         SceneManager.LoadScene("Win");
     }
 
-<<<<<<< Updated upstream
-=======
+    void CambiarEscena2()
+    {
+        SceneManager.LoadScene("Pantalla3");
+    }
+
     private void DispararBola()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -148,5 +151,4 @@ public class MovimientoJabali : MonoBehaviour
             }
         }
     }
->>>>>>> Stashed changes
 }
