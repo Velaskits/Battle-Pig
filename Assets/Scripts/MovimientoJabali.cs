@@ -54,6 +54,10 @@ public class MovimientoJabali : MonoBehaviour
             ContadorDeMonedas.text = contador.ToString();
         }
 
+        if (other.tag == "EntradaCueva1"){
+            
+        }
+
 
     }
     private void MovimientoJab()

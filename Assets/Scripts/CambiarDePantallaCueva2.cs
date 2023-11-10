@@ -1,15 +1,14 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CambioDeEscena : MonoBehaviour
+public class CambiarDePantallaCueva2 : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)    {
 
         if (collision.CompareTag("jabali"))
         {
 
-            SceneManager.LoadScene("Pantalla3");
+            SceneManager.LoadScene("Pantalla2");
         }
     }
     

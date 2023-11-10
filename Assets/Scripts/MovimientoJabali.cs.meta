@@ -3,7 +3,12 @@ guid: 803e7d5bd4477f74eb20c7e63187e1da
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - chuletas_0: {fileID: 1550711913986916577, guid: feb93c6eca9981b46a82b0c2d70baa91, type: 3}
+  - ContadorDeMonedas: {instanceID: 0}
+  - bolabarroprefabs: {fileID: 1498983820643831163, guid: 94769eb758e639f42a9589676bb79550, type: 3}
+  - carga_Jabaliprefabs: {fileID: 293617843927726211, guid: 16a7c9cf61a95624685cad6aa2caed99, type: 3}
+  - tilemapCollider: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
