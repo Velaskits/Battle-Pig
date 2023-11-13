@@ -8,7 +8,7 @@ public class CambiarDePantallaCueva2 : MonoBehaviour
         if (collision.CompareTag("jabali"))
         {
 
-            SceneManager.LoadScene("Pantalla2");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
         }
     }
     

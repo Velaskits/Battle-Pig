@@ -22,6 +22,7 @@ public class MovimientoJabali : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         miradreta = true;
         _velJab = 4;
+        ContadorDeMonedas.text = GlobalData.monedas.ToString();
     }
 
     // Update is called once per frame
@@ -50,8 +51,8 @@ public class MovimientoJabali : MonoBehaviour
 
         if (other.tag == "monedas")
         {
-            contador++;
-            ContadorDeMonedas.text = contador.ToString();
+            GlobalData.monedas += 1;
+            ContadorDeMonedas.text = GlobalData.monedas.ToString();
         }
 
         if (other.tag == "EntradaCueva1"){
