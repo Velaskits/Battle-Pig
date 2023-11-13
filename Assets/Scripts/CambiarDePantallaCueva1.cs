@@ -9,7 +9,7 @@ public class CambioDeEscena : MonoBehaviour
         if (collision.CompareTag("jabali"))
         {
 
-            SceneManager.LoadScene("Pantalla3");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
     
