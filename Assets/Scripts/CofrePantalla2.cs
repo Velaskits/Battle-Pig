@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class CofrePantalla2 : MonoBehaviour
 {
+    private GameObject Respuesta;
     private bool cofretocado;
+    int respuesatcorrecta = 8;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +18,13 @@ public class CofrePantalla2 : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && cofretocado)
         {
+            Respuesta.SetActive(true);
+            if (Respuesta == respuesatcorrecta)
+            {
+                Debug.Log("Respuesta correcta");
+            }
             gameObject.transform.parent.gameObject.SetActive(false);
+            
         }
     }
     void OnTriggerEnter2D(Collider2D col)
