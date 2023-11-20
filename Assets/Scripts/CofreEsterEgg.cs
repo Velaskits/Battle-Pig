@@ -7,10 +7,10 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class CofrePantalla3 : MonoBehaviour
+public class CofreEsterEgg : MonoBehaviour
 {
     private bool estaDentro;
-    public GameObject monedaCofre;
+    public GameObject vida;
     public GameObject CuadroRespuesta;
     public TMP_InputField InputText;
     public GameObject Canvas;
@@ -31,10 +31,10 @@ public class CofrePantalla3 : MonoBehaviour
             Canvas.SetActive(true);
             cofre.SetActive(true);
             
-            if (InputText.GetComponent<TMP_InputField>().text == "8")
+            if (InputText.GetComponent<TMP_InputField>().text == "25")
             {
                 cofre.SetActive(false);
-                monedaCofre = Instantiate(Resources.Load("Prefabs/Contador"), transform.position, transform.rotation) as GameObject;
+                vida = Instantiate(Resources.Load("Prefabs/cuervo1"), transform.position, transform.rotation) as GameObject;
                 CuadroRespuesta.SetActive(false);
                 Canvas.SetActive(false);
             }

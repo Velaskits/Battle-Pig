@@ -31,11 +31,11 @@ public class MovimientoLoboPantalla2 : MonoBehaviour
             if (direccioHoritzontal < 0)
             {
 
-                spriteRenderer.flipX = false;
+                spriteRenderer.flipX = true;
             }
             else if (direccioHoritzontal > 0)
             {
-                spriteRenderer.flipX = true;
+                spriteRenderer.flipX = false;
             }
         }
 

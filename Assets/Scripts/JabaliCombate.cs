@@ -13,7 +13,6 @@ public class JabaliCombate : MonoBehaviour
     public bool miradreta;
     public GameObject carga_Jabaliprefabs;
     private Rigidbody2D rb;
-    public TilemapCollider2D tilemapCollider;
     // Start is called before the first frame update
     void Start()
     {
@@ -62,7 +61,6 @@ public class JabaliCombate : MonoBehaviour
 
         // Aplica las colisiones del Tilemap Collider 2D
         rb.velocity = velocidad;
-        tilemapCollider.usedByComposite = true; // Activa el uso del TilemapCollider2D
 
         Vector2 novaPos = rb.position;
         novaPos.x = Mathf.Clamp(novaPos.x, limitEsquerraX, limitDretaX);
