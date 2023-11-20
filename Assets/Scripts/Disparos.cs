@@ -5,20 +5,20 @@ using UnityEngine;
 public class Disparos : MonoBehaviour
 {
     public float Velocity = 5f;
-    
+
 
     // Start is called before the first frame update
     void Start()
     {
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
         GameObject jabali = GameObject.Find("jabali");
-        bool direcciodreta = jabali.GetComponent<JabaliPantalla2>().getmiradreta();
+        bool direcciodreta = jabali.GetComponent<JabaliCombate>().getmiradreta();
         if (direcciodreta)
         {
             Velocity = 5f;
-           
+
         }
-        else if ( !direcciodreta)
+        else if (!direcciodreta)
         {
             Velocity = -5f;
             spriteRenderer.flipX = true;
@@ -51,6 +51,15 @@ public class Disparos : MonoBehaviour
 
 
     }
+    private void OnTriggerEnter2D(Collider2D objetotocado)
+    {
+        if (objetotocado.tag == "LobosCombate")
+        {
+            Debug.Log("Lobo tocado");
+            Destroy(gameObject);
 
-    
+        }
+    }
+
+
 }

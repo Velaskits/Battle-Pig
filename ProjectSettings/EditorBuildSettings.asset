@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Win.unity
     guid: d403ae721981aab4f976ee1d26e3c7c7
+  - enabled: 1
+    path: Assets/Scenes/CombateLobo.unity
+    guid: 7942284ef07143c45843c588ed0817f9
   m_configObjects: {}

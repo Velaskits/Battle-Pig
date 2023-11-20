@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4839882774195058247}
   m_Layer: 0
   m_Name: boladebarro
-  m_TagString: Untagged
+  m_TagString: Boladebarro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

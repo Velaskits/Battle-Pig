@@ -8,10 +8,10 @@ public class CargaJabali : MonoBehaviour
     public Transform carga; // La referencia al objeto de la carga
     public float velocidad = 5f; // Velocidad de movimiento del personaje
     public float distanciaMovimiento = 1.2f; // Distancia que se mover� el personaje y la carga
-    private bool miraDretra;
+    //private bool miraDretra;
     void Start()
     {
-        miraDretra = true;
+        //miraDretra = true;
     }
 
     // Update is called once per frame
@@ -27,7 +27,7 @@ public class CargaJabali : MonoBehaviour
             }
             GameObject Jabali = GameObject.Find("jabali");
             // Multiplica el desplazamiento actual por 2 (0.6f * 2)
-            float desplazamiento = 0.6f * 2;
+            //float desplazamiento = 0.6f * 2;
            
         }
     }

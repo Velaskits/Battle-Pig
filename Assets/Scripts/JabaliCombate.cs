@@ -7,13 +7,12 @@ public class JabaliCombate : MonoBehaviour
     public float _velJab;
     public GameObject chuletas_0;
     public bool finJuego;
-    private int contador = 0;
+    //private int contador = 0;
     public TMPro.TextMeshProUGUI ContadorDeMonedas;
     public GameObject bolabarroprefabs;
     public bool miradreta;
-    public GameObject carga_Jabaliprefabs;
+    //public GameObject carga_Jabaliprefabs;
     private Rigidbody2D rb;
-    public TilemapCollider2D tilemapCollider;
     // Start is called before the first frame update
     void Start()
     {
@@ -60,9 +59,7 @@ public class JabaliCombate : MonoBehaviour
 
         Vector2 velocidad = direccioIndicada * _velJab;
 
-        // Aplica las colisiones del Tilemap Collider 2D
-        rb.velocity = velocidad;
-        tilemapCollider.usedByComposite = true; // Activa el uso del TilemapCollider2D
+       
 
         Vector2 novaPos = rb.position;
         novaPos.x = Mathf.Clamp(novaPos.x, limitEsquerraX, limitDretaX);

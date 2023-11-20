@@ -19,10 +19,11 @@ public class PantallaCombateLobo : MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter2D(Collision2D otro)
+    void OnTriggerEnter2D(Collider2D otro)
     {
-        if (otro.gameObject.CompareTag("boladebarro"))
+        if (otro.gameObject.CompareTag("Boladebarro"))
         {
+            Debug.Log("tocado");
             vidas--;
             slidervidas.value = vidas;
             if (vidas<=0)
