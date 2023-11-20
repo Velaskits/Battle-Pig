@@ -9,7 +9,7 @@ public class MovimientoJabali : MonoBehaviour
     public float _velJab;
     public GameObject chuletas_0;
     public bool finJuego;
-    private int contador = 0;
+    //private int contador = 0;
     public TMPro.TextMeshProUGUI ContadorDeMonedas;
     public GameObject bolabarroprefabs;
     public bool miradreta;

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
 
 public class JabaliPantalla2 : MonoBehaviour
@@ -8,7 +9,7 @@ public class JabaliPantalla2 : MonoBehaviour
     public float _velJab;
     public GameObject chuletas_0;
     public bool finJuego;
-    private int contador = 0;
+    //private int contador = 0;
     public TMPro.TextMeshProUGUI ContadorDeMonedas;
     public GameObject bolabarroprefabs;
     public bool miradreta;
@@ -113,15 +114,20 @@ public class JabaliPantalla2 : MonoBehaviour
     }
 
     //Cuando el Jabali es tocado por el Lobo saltara una pantalla de combate
-    private void OnTriggerEnter2D(Collider2D other)
+ void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.tag == "lobo")
+        if (other.gameObject.tag == "Lobo_Pantalla2")
         {
             gameObject.SetActive(false);
-            //llamar gamemanager hacer funcion para llamr al Game Over que sera una pantalla.
-            Invoke("CombateLobo", 2f);
+            //llamar gamemanager hacer funcion para llamr al Combate lobo que sera una pantalla.
+            Invoke("CambiarEscena", 1f);
 
 
         }
+    }
+    void CambiarEscena()
+    {
+        // Carga la nueva escena (reemplaza "NombreDeTuEscena" con el nombre real de tu escena)
+        SceneManager.LoadScene("CombateLobo");
     }
 }
