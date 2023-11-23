@@ -288,9 +288,9 @@ GameObject:
   - component: {fileID: 100843822}
   - component: {fileID: 100843821}
   - component: {fileID: 100843820}
+  - component: {fileID: 100843824}
   - component: {fileID: 100843819}
   - component: {fileID: 100843818}
-  - component: {fileID: 100843824}
   m_Layer: 0
   m_Name: jabali
   m_TagString: jabali
@@ -490,7 +490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f038d07001c141f43bf244f86f835f06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidas: 4
+  vidas: 3
   vidamaxima: 4
   corazon:
   - {fileID: 509884232}
@@ -3857,7 +3857,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1145501255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4569,12 +4569,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6853ab193867cf84f9491170ebe75a67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cuervo: {fileID: 0}
   CuadroRespuesta: {fileID: 1848710383}
   InputText: {fileID: 1110121736}
   Canvas: {fileID: 309425843}
   respuesta: 25
   cofre: {fileID: 80514892}
+  scriptVida: {fileID: 1937058863}
 --- !u!61 &1553366357
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -1,28 +1,25 @@
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
-
 
 public class CofreEsterEgg : MonoBehaviour
 {
     private bool estaDentro;
-    public GameObject vida;
     public GameObject CuadroRespuesta;
     public TMP_InputField InputText;
     public GameObject Canvas;
-    public int respuesta = 25;
+    public int respuesta = 3;
     public GameObject cofre;
-    // Start is called before the first frame update
+
+    // Referencia al script Vida para acceder a las variables de vida
+    public Vida scriptVida;
+
     void Start()
     {
         estaDentro = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && estaDentro)
@@ -30,11 +27,12 @@ public class CofreEsterEgg : MonoBehaviour
             CuadroRespuesta.SetActive(true);
             Canvas.SetActive(true);
             cofre.SetActive(true);
-            
-            if (InputText.GetComponent<TMP_InputField>().text == "25")
+
+            if (InputText.text == respuesta.ToString())
             {
+                // Incrementar la vida en uno
+                scriptVida.vidas++;
                 cofre.SetActive(false);
-                vida = Instantiate(Resources.Load("Prefabs/cuervo1"), transform.position, transform.rotation) as GameObject;
                 CuadroRespuesta.SetActive(false);
                 Canvas.SetActive(false);
             }
@@ -42,9 +40,6 @@ public class CofreEsterEgg : MonoBehaviour
             {
                 Debug.Log("Fallo");
             }
-
-
-
         }
     }
 
@@ -52,9 +47,7 @@ public class CofreEsterEgg : MonoBehaviour
     {
         if (col.tag == "jabali")
         {
-
             estaDentro = true;
-
         }
     }
 
@@ -65,5 +58,4 @@ public class CofreEsterEgg : MonoBehaviour
             estaDentro = false;
         }
     }
-
 }
