@@ -169,12 +169,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6853ab193867cf84f9491170ebe75a67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cuervo: {fileID: 5829933824760746264, guid: 1ae2a531f9a9bba4abf20ad05f192abd, type: 3}
   CuadroRespuesta: {fileID: 1644482453}
   InputText: {fileID: 434806295}
   Canvas: {fileID: 346966858}
   respuesta: 25
   cofre: {fileID: 1233030771}
+  scriptVida: {fileID: 0}
 --- !u!61 &18111
 BoxCollider2D:
   m_ObjectHideFlags: 0
