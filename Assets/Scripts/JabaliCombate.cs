@@ -1,24 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.Tilemaps;
+using UnityEngine.UI;
 
 public class JabaliCombate : MonoBehaviour
 {
     public float _velJab;
-    public GameObject chuletas_0;
     public bool finJuego;
-    //private int contador = 0;
-    public TMPro.TextMeshProUGUI ContadorDeMonedas;
     public GameObject bolabarroprefabs;
     public bool miradreta;
-    //public GameObject carga_Jabaliprefabs;
     private Rigidbody2D rb;
+    public TilemapCollider2D tilemapCollider;
+    [SerializeField] int vidas;
+    [SerializeField] Slider slidervidas;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         miradreta = true;
         _velJab = 4;
+
+        slidervidas.maxValue = vidas;
+        slidervidas.value = slidervidas.maxValue;
     }
 
     // Update is called once per frame
@@ -59,12 +64,16 @@ public class JabaliCombate : MonoBehaviour
 
         Vector2 velocidad = direccioIndicada * _velJab;
 
-       
+        // Aplica las colisiones del Tilemap Collider 2D
+        rb.velocity = velocidad;
+        tilemapCollider.usedByComposite = true; // Activa el uso del TilemapCollider2D
+
 
         Vector2 novaPos = rb.position;
         novaPos.x = Mathf.Clamp(novaPos.x, limitEsquerraX, limitDretaX);
         novaPos.y = Mathf.Clamp(novaPos.y, limitAbajoY, limitArribaY);
-
+        
+        transform.position = novaPos;
     }
     public bool getmiradreta()
     {
@@ -81,5 +90,28 @@ public class JabaliCombate : MonoBehaviour
             Vector2 newPos = transform.position;
             bala.transform.position = this.transform.position;
         }
+    }
+
+    void OnTriggerEnter2D(Collider2D otro)
+    {
+        if (otro.gameObject.CompareTag("DisparoLobo"))
+        {
+         
+            vidas--;
+            slidervidas.value = vidas;
+            if (vidas <= 0)
+            {
+                Invoke("CambiarEscena", 2f);
+
+            }
+            
+
+        }
+    }
+    void CambiarEscena()
+    {
+        Destroy(this.gameObject);
+        // Carga la nueva escena (reemplaza "NombreDeTuEscena" con el nombre real de tu escena)
+        SceneManager.LoadScene("GameOver");
     }
 }

@@ -8,6 +8,10 @@ public class MovimientoLoboPantalla2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (GlobalData.VidaLobo) {
+            this.enabled = false;
+            Destroy(gameObject);
+        }
         _lobo = 3f;
     }
 
@@ -20,9 +24,9 @@ public class MovimientoLoboPantalla2 : MonoBehaviour
     {
         if (GameObject.Find("jabali") != null)
         {
-            Vector2 direccionCazador = (GameObject.Find("jabali").transform.position - transform.position).normalized;
+            Vector2 direccionlobo = (GameObject.Find("jabali").transform.position - transform.position).normalized;
             Vector2 novaPos = transform.position;
-            novaPos += direccionCazador * _lobo * Time.deltaTime;
+            novaPos += direccionlobo * _lobo * Time.deltaTime;
             transform.position = novaPos;
 
             float direccioHoritzontal = Input.GetAxisRaw("Horizontal");

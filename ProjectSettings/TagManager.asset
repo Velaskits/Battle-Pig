@@ -11,6 +11,8 @@ TagManager:
   - cuervo
   - Boladebarro
   - Lobo_Pantalla2
+  - DisparoLobo
+  - Loobos
   layers:
   - Default
   - TransparentFX
