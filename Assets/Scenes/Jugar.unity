@@ -4043,7 +4043,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 445aea4e724e4a540920cd2fd9297beb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heart: {fileID: 0}
 --- !u!1 &1244661188
 GameObject:
   m_ObjectHideFlags: 0
@@ -4549,7 +4548,7 @@ GameObject:
   - component: {fileID: 1553366359}
   - component: {fileID: 1553366358}
   - component: {fileID: 1553366357}
-  - component: {fileID: 1553366356}
+  - component: {fileID: 1553366360}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -4557,24 +4556,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1553366356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1553366355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6853ab193867cf84f9491170ebe75a67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CuadroRespuesta: {fileID: 1848710383}
-  InputText: {fileID: 1110121736}
-  Canvas: {fileID: 309425843}
-  respuesta: 25
-  cofre: {fileID: 80514892}
-  scriptVida: {fileID: 1937058863}
 --- !u!61 &1553366357
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4688,6 +4669,24 @@ Transform:
   - {fileID: 80514894}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1553366360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553366355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adeac1a42eb6b804a806566771e61670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CuadroRespuesta: {fileID: 1848710383}
+  InputText: {fileID: 1110121736}
+  Canvas: {fileID: 309425843}
+  respuesta: 3
+  cofre: {fileID: 80514892}
+  scriptVida: {fileID: 1937058863}
 --- !u!1 &1669199305
 GameObject:
   m_ObjectHideFlags: 0
@@ -5832,7 +5831,7 @@ GameObject:
   - component: {fileID: 1848710385}
   - component: {fileID: 1848710384}
   m_Layer: 0
-  m_Name: OperacionCuervo
+  m_Name: OperacionPantalla1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5879,7 +5878,7 @@ SpriteRenderer:
   m_SortingLayerID: 1289976321
   m_SortingLayer: 6
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 81f0f5300b783ef4b94295d79ab1e77b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 334ca738ac8587d4aa3c667719e72a09, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6422,7 +6421,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b3358ad910bc4941835810f58af2a1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CantidadPuntos: 0
 --- !u!4 &2118596809
 Transform:
   m_ObjectHideFlags: 0
