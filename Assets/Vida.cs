@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,10 +19,10 @@ public class Vida : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ligicaDeVida();
+        logicaDeVida();
     }
 
-    void ligicaDeVida()
+    void logicaDeVida()
     {
 
         if (vidas > vidamaxima)

@@ -1,4 +1,5 @@
 using System.Collections;
+using System.ComponentModel;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,34 +12,53 @@ public class CofreEsterEgg : MonoBehaviour
     public GameObject Canvas;
     public int respuesta = 3;
     public GameObject cofre;
-
-    // Referencia al script Vida para acceder a las variables de vida
-    public Vida scriptVida;
+    public GameObject vida1;
+    public GameObject vida2;
+    public GameObject vida3;
+    public GameObject vida4;
+    private bool estoypreg;
 
     void Start()
     {
         estaDentro = false;
+        estoypreg = false;
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && estaDentro)
         {
+
             CuadroRespuesta.SetActive(true);
             Canvas.SetActive(true);
             cofre.SetActive(true);
+            estoypreg = true;
 
             if (InputText.text == respuesta.ToString())
             {
                 // Incrementar la vida en uno
-                scriptVida.vidas++;
-                cofre.SetActive(false);
+                vida4.SetActive(true);
+                Destroy(gameObject);
                 CuadroRespuesta.SetActive(false);
                 Canvas.SetActive(false);
             }
             else
             {
-                Debug.Log("Fallo");
+                
+            }
+        }
+
+        if (estoypreg == true){
+             if (InputText.text == respuesta.ToString())
+            {
+                // Incrementar la vida en uno
+                vida4.SetActive(true);
+                Destroy(gameObject);
+                CuadroRespuesta.SetActive(false);
+                Canvas.SetActive(false);
+            }
+            else
+            {
             }
         }
     }
