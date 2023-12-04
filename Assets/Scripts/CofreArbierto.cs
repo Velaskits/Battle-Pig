@@ -1,37 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
-using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.UI;
 
-
-public class CofrePantalla3 : MonoBehaviour
+public class CofreArbierto : MonoBehaviour
 {
-    private bool estaDentro;
-    public GameObject monedaCofre;
-    public GameObject CuadroRespuesta;
-    public TMP_InputField InputText;
-    public GameObject Canvas;
-    public int respuesta = 25;
-    public GameObject cofre;
+    public int idCofres;
     // Start is called before the first frame update
     void Start()
     {
-        estaDentro = false;
-        
+        if (GlobalData.cofreAbierto[idCofres])
+        {
+            this.enabled = false;
+            Destroy(gameObject);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.E) && estaDentro)
         {
             CuadroRespuesta.SetActive(true);
             Canvas.SetActive(true);
             cofre.SetActive(true);
-            
+
             if (InputText.GetComponent<TMP_InputField>().text == "8")
             {
                 cofre.SetActive(false);
@@ -66,5 +59,4 @@ public class CofrePantalla3 : MonoBehaviour
             estaDentro = false;
         }
     }
-
 }
