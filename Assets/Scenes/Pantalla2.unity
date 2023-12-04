@@ -444,6 +444,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -1922120313
       objectReference: {fileID: 0}
+    - target: {fileID: 8082194736887515173, guid: f0eed60de433dbb468934e483db5c8ee, type: 3}
+      propertyPath: idMoneda
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3037,14 +3041,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7800491104492364115, guid: f0eed60de433dbb468934e483db5c8ee, type: 3}
-      propertyPath: m_SortingLayer
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7800491104492364115, guid: f0eed60de433dbb468934e483db5c8ee, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1922120313
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4435,6 +4431,7 @@ GameObject:
   - component: {fileID: 1766078788}
   - component: {fileID: 1766078790}
   - component: {fileID: 1766078791}
+  - component: {fileID: 1766078792}
   m_Layer: 0
   m_Name: CofrePantalla2
   m_TagString: Untagged
@@ -4582,6 +4579,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1766078792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766078787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b38ba41e98fd3e2449bbff11515bb7e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCofres: 0
 --- !u!1 &1768227218
 GameObject:
   m_ObjectHideFlags: 0
@@ -5909,12 +5919,6 @@ SceneRoots:
   - {fileID: 215095205}
   - {fileID: 777191477}
   - {fileID: 713258171}
+  - {fileID: 923035894}
   - {fileID: 1741982765}
   - {fileID: 1766078789}
-  - {fileID: 1102161215}
-  - {fileID: 131440430}
-  - {fileID: 1164012188}
-  - {fileID: 1365918615}
-  - {fileID: 422182906}
-  - {fileID: 1246298938}
-  - {fileID: 1060294174}

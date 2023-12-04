@@ -5,7 +5,9 @@ using UnityEngine;
 public static class GlobalData
 {
     // Start is called before the first frame update
-    public static int monedas = 0;
-    public static bool VidaLobo=false;
-    public static bool vida4 = true;
+    public static int monedas = 0;//contador
+    public static bool VidaLobo=false;//Lobo
+    public static bool monedasP=false;//monedas del juego
+    public static bool[] monedasCogidas = new bool[20];
+    public static bool[] cofreAbierto=new bool[20];
 }
