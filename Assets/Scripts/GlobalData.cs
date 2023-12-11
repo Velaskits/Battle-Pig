@@ -9,5 +9,6 @@ public static class GlobalData
     public static bool VidaLobo=false;//Lobo
     public static bool monedasP=false;//monedas del juego
     public static bool[] monedasCogidas = new bool[20];
-    public static bool[] cofreAbierto=new bool[20];
+    //public static bool[] cofreAbierto=new bool[20];
+    public static bool cuervoVisto = false;//Cuervo
 }

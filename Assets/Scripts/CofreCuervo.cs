@@ -37,6 +37,7 @@ public class CofreCuervo : MonoBehaviour
                 cuervo = Instantiate(Resources.Load("Prefabs/cuervo1"), transform.position, transform.rotation) as GameObject;
                 CuadroRespuesta.SetActive(false);
                 Canvas.SetActive(false);
+                GlobalData.cuervoVisto = true;
             }
             else
             {

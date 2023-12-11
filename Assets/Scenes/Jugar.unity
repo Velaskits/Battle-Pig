@@ -292,7 +292,6 @@ GameObject:
   - component: {fileID: 100843822}
   - component: {fileID: 100843821}
   - component: {fileID: 100843820}
-  - component: {fileID: 100843824}
   - component: {fileID: 100843819}
   - component: {fileID: 100843818}
   m_Layer: 0
@@ -482,27 +481,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &100843824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100843817}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f038d07001c141f43bf244f86f835f06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vidas: 3
-  vidamaxima: 4
-  corazon:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  maximo: {fileID: 1505368738, guid: 48f6c5a5923dd51408e2ea30d11cf63f, type: 3}
-  vacio: {fileID: 386856825, guid: 48f6c5a5923dd51408e2ea30d11cf63f, type: 3}
 --- !u!1 &179065765
 GameObject:
   m_ObjectHideFlags: 0
@@ -1451,7 +1429,7 @@ SpriteRenderer:
   m_SortingLayerID: 1638267137
   m_SortingLayer: 5
   m_SortingOrder: 2
-  m_Sprite: {fileID: 232079087, guid: 77e2edb8382d2c241a50b364531f344e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 98a31938d1f8021478e4aad69a7df4d1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1472,8 +1450,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.65, y: 4.53, z: -1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.19999999, y: 0.18691587, z: 0.18691587}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1487,7 +1465,7 @@ Animator:
   m_GameObject: {fileID: 645204663}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6ee1e2e8c4f51414b8f5bae9b99cd2c4, type: 2}
+  m_Controller: {fileID: 9100000, guid: e91dbc2f0f534bb4abbed07ae39b99aa, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

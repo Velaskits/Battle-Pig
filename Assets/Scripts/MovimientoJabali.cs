@@ -16,9 +16,13 @@ public class MovimientoJabali : MonoBehaviour
     public GameObject carga_Jabaliprefabs;
     private Rigidbody2D rb;
     public TilemapCollider2D tilemapCollider;
+    
     // Start is called before the first frame update
     void Start()
     {
+        if(GlobalData.cuervoVisto == true){
+            GameObject cuervo = Instantiate(Resources.Load("Prefabs/cuervo1"), transform.position, transform.rotation) as GameObject;
+        }
         rb = GetComponent<Rigidbody2D>();
         miradreta = true;
         _velJab = 4;
