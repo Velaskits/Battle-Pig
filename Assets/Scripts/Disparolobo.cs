@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class Disparolobo : MonoBehaviour
 {
+   
     public float Velocity = 5f;
     // Start is called before the first frame update
     void Start()
@@ -45,4 +47,15 @@ public class Disparolobo : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    private void OnTriggerEnter2D(Collider2D objetotocado)
+    {
+        if (objetotocado.tag == "arbol")
+        {
+            Debug.Log("Arbol tocado");
+            Destroy(gameObject);
+
+        }
+    }
+
 }
+
