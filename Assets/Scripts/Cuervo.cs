@@ -8,7 +8,7 @@ public class Cuervo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _velCuervo = 2f;
+        _velCuervo = 3f;
     }
 
     // Update is called once per frame

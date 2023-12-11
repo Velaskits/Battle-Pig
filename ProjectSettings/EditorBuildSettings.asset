@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CombateLobo.unity
     guid: 7942284ef07143c45843c588ed0817f9
+  - enabled: 1
+    path: Assets/Scenes/PantallaFinal.unity
+    guid: 1a75ed4f2342ae74bb1127e15936a35b
   m_configObjects: {}
