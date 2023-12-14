@@ -107,7 +107,15 @@ public class JabaliCombate : MonoBehaviour
             
 
         }
+        if (otro.gameObject.CompareTag("arbol"))
+        {
+
+            // Si hay colisión con un árbol, detén el movimiento
+            //transform.Translate(Vector2.zero);
+            Debug.Log("hola");
+        }
     }
+ 
     void CambiarEscena()
     {
         Destroy(this.gameObject);

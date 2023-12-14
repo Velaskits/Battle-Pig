@@ -33,8 +33,7 @@ public class MovimientoJabali : MonoBehaviour
     void Update()
     {
         MovimientoJab();
-        DispararBola();
-        carga();
+        
     }
     // Aqui lo que hacemos es cuando el jabali es tocado por el cazador se destruye
     private void OnTriggerEnter2D(Collider2D other)
@@ -123,41 +122,4 @@ public class MovimientoJabali : MonoBehaviour
         SceneManager.LoadScene("Pantalla3");
     }
 
-    private void DispararBola()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            //Dispara
-            GameObject bala = Instantiate(bolabarroprefabs);//indicamos de que tipo es el objeto
-            Vector2 newPos = transform.position;
-            newPos.x = newPos.x + 2f;
-            bala.transform.position = this.transform.position;
-        }
-    }
-
-    public void carga()
-    {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            GameObject carga = Instantiate(carga_Jabaliprefabs);//indicamos de que tipo es el objeto
-            Vector2 newPos = transform.position;
-            newPos.x = newPos.x + 2f;
-            carga.transform.position = this.transform.position;
-
-            if (getmiradreta())
-            {
-                SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
-                spriteRenderer.flipX = false;
-                InvokeRepeating("dash", 0f, 0.005f);
-                Invoke("stopDash", 0.15f);
-            }
-            else if (!getmiradreta())
-            {
-                SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
-                spriteRenderer.flipX = true;
-                InvokeRepeating("dash", 0f, 0.005f);
-                Invoke("stopDash", 0.15f);
-            }
-        }
-    }
 }

@@ -51,7 +51,7 @@ public class Disparolobo : MonoBehaviour
     {
         if (objetotocado.tag == "arbol")
         {
-            Debug.Log("Arbol tocado");
+            
             Destroy(gameObject);
 
         }

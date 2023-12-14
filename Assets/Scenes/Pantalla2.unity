@@ -4591,6 +4591,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38ba41e98fd3e2449bbff11515bb7e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  monedaCofre: {fileID: 0}
+  CuadroRespuesta: {fileID: 0}
+  InputText: {fileID: 0}
+  Canvas: {fileID: 0}
+  respuesta: 8
+  cofre: {fileID: 0}
+  idCofre: 1
 --- !u!1 &1768227218
 GameObject:
   m_ObjectHideFlags: 0
@@ -4740,6 +4747,7 @@ MonoBehaviour:
   Canvas: {fileID: 1741982761}
   respuesta: 8
   cofre: {fileID: 1766078787}
+  idCofre: 0
 --- !u!1 &1771411408
 GameObject:
   m_ObjectHideFlags: 0

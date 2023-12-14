@@ -59,6 +59,12 @@ public class Disparos : MonoBehaviour
             Destroy(gameObject);
 
         }
+        if (objetotocado.tag == "arbol")
+        {
+
+            Destroy(gameObject);
+
+        }
     }
 
 

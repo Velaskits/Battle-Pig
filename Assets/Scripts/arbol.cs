@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class arbol : MonoBehaviour
 {
+    public TilemapCollider2D tilemapCollider;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,13 +17,5 @@ public class arbol : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter2D(Collider2D objetotocado)
-    {
-        if (objetotocado.tag == "arbol")
-        {
-            Debug.Log("Arbol tocado");
-            Destroy(gameObject);
-
-        }
-    }
+  
 }

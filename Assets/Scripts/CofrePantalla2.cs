@@ -16,11 +16,16 @@ public class CofrePantalla3 : MonoBehaviour
     public GameObject Canvas;
     public int respuesta = 25;
     public GameObject cofre;
+    public int idCofre;
     // Start is called before the first frame update
     void Start()
     {
         estaDentro = false;
-        
+        if (GlobalData.monedasCogidas[idCofre])
+        {
+            this.enabled = false;
+            Destroy(gameObject);
+        }
     }
 
     // Update is called once per frame
@@ -57,6 +62,11 @@ public class CofrePantalla3 : MonoBehaviour
             estaDentro = true;
 
         }
+        if (col.tag == "jabali")
+        {
+            GlobalData.monedasCogidas[idCofre] = true;
+            Destroy(gameObject);
+        }
     }
 
     void OnTriggerExit2D(Collider2D col)
@@ -66,5 +76,5 @@ public class CofrePantalla3 : MonoBehaviour
             estaDentro = false;
         }
     }
-
+    
 }

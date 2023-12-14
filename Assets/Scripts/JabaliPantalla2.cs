@@ -31,8 +31,7 @@ public class JabaliPantalla2 : MonoBehaviour
     void Update()
     {
         MovimientoJab();
-        DispararBola();
-        carga();
+        
     }
     private void MovimientoJab()
     {
@@ -77,20 +76,8 @@ public class JabaliPantalla2 : MonoBehaviour
     {
         return miradreta;
     }
-    private void DispararBola()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            //Dispara
-            GameObject bala = Instantiate(bolabarroprefabs);//indicamos de que tipo es el objeto
-            Vector2 newPos = transform.position;
-            bala.transform.position = this.transform.position;
-
-
-
-        }
-    }
-    public void carga()
+    
+    /*public void carga()
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
@@ -114,7 +101,7 @@ public class JabaliPantalla2 : MonoBehaviour
                 Invoke("stopDash", 0.15f);
             }
         }
-    }
+    }*/
 
     //Cuando el Jabali es tocado por el Lobo saltara una pantalla de combate
  void OnCollisionEnter2D(Collision2D other)
