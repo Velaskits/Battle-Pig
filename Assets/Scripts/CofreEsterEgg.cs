@@ -17,15 +17,18 @@ public class CofreEsterEgg : MonoBehaviour
     public GameObject vida3;
     public GameObject vida4;
     private bool estoypreg;
+    private bool haEntrado;
 
     void Start()
     {
         estaDentro = false;
         estoypreg = false;
+        haEntrado = false;
     }
 
     void Update()
     {
+        Debug.Log(GlobalData.vidas);
         if (Input.GetKeyDown(KeyCode.E) && estaDentro)
         {
 
@@ -44,21 +47,59 @@ public class CofreEsterEgg : MonoBehaviour
             }
             else
             {
-                
+
             }
         }
 
-        if (estoypreg == true){
-             if (InputText.text == respuesta.ToString())
+        if (estoypreg == true)
+        {
+            if (InputText.text == respuesta.ToString())
             {
                 // Incrementar la vida en uno
-                vida4.SetActive(true);
+                GlobalData.vidas++;
+                if (GlobalData.vidas == 2)
+                {
+                    vida2.SetActive(true);
+                }
+                else if (GlobalData.vidas == 3)
+                {
+                    vida3.SetActive(true);
+                }
+                else
+                {
+                    vida2.SetActive(true);
+                    vida3.SetActive(true);
+                    vida4.SetActive(true);
+                }
                 Destroy(gameObject);
                 CuadroRespuesta.SetActive(false);
                 Canvas.SetActive(false);
             }
-            else
+            else if (InputText.text != "" && haEntrado == true)
             {
+                haEntrado = true;
+                CuadroRespuesta.SetActive(false);
+                Canvas.SetActive(false);
+                GlobalData.vidas--;
+                if (GlobalData.vidas == 0)
+                {
+                    
+                }
+                else if (GlobalData.vidas == 1)
+                {
+                    vida2.SetActive(false);
+                    vida3.SetActive(false);
+                    vida4.SetActive(false);
+                }
+                else if (GlobalData.vidas == 2)
+                {
+                    vida3.SetActive(false);
+                    vida4.SetActive(false);
+                }
+                else if (GlobalData.vidas == 3)
+                {
+                    vida4.SetActive(false);
+                }
             }
         }
     }

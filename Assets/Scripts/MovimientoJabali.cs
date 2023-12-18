@@ -17,7 +17,6 @@ public class MovimientoJabali : MonoBehaviour
     private Rigidbody2D rb;
     public TilemapCollider2D tilemapCollider;
     
-    // Start is called before the first frame update
     void Start()
     {
         if(GlobalData.cuervoVisto == true){
@@ -29,7 +28,6 @@ public class MovimientoJabali : MonoBehaviour
         ContadorDeMonedas.text = GlobalData.monedas.ToString();
     }
 
-    // Update is called once per frame
     void Update()
     {
         MovimientoJab();
@@ -106,7 +104,7 @@ public class MovimientoJabali : MonoBehaviour
         return miradreta;
     }
 
-    void CambiarEscena()
+    /*void CambiarEscena()
     {
         // Carga la nueva escena (reemplaza "NombreDeTuEscena" con el nombre real de tu escena)
         SceneManager.LoadScene("GameOver");
@@ -120,6 +118,6 @@ public class MovimientoJabali : MonoBehaviour
     void CambiarEscena2()
     {
         SceneManager.LoadScene("Pantalla3");
-    }
+    }*/
 
 }

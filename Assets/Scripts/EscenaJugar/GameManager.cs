@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour
     public GameObject TextoHistoria5;
     public GameObject BotonSiguienteTexto;
     public GameObject ButtonSiguiente;
+    public GameObject TextoFinal1;
+    public GameObject TextoFinal2;
 
     //Lista de casos de la historia.
     public enum EstatsGameManagerHistoria
@@ -42,9 +44,17 @@ public class GameManager : MonoBehaviour
         Texto2
     }
 
+    public enum EstatsGameManagerHistoriaFinal
+    {
+        FinalParte1,
+        FinalParte2
+    }
+
     private EstatsGameManager _estatGameManager;
 
     public EstatsGameManagerHistoria _estatGameManagerHistoria;
+
+    public EstatsGameManagerHistoriaFinal _estatGameManagerHistoriaFinal; 
 
     // Start is called before the first frame update
     void Start()
@@ -55,6 +65,9 @@ public class GameManager : MonoBehaviour
         //Esto es el estado de las escenas de la historia.
         _estatGameManagerHistoria = EstatsGameManagerHistoria.escena1;
         contador = 1;
+
+        //Esto es el estado de las escenas del final de la historia.
+        _estatGameManagerHistoriaFinal = EstatsGameManagerHistoriaFinal.FinalParte1;
     }
 
     // Update is called once per frame
@@ -79,6 +92,25 @@ public class GameManager : MonoBehaviour
                 break;
         }
     }
+
+    //Actualiza el estado del final de la historia.
+    private void ActualitzaEstatGameManagerHistoriaFinal()
+    {
+        switch (_estatGameManagerHistoriaFinal)
+        {
+            case EstatsGameManagerHistoriaFinal.FinalParte1:
+                TextoFinal1.SetActive(true);
+                TextoFinal2.SetActive(false);
+                break;
+
+            case EstatsGameManagerHistoriaFinal:
+                TextoFinal1.SetActive(false);
+                TextoFinal2.SetActive(true);
+                break;
+        }
+    }
+
+
 
 
     //Actualiza los cambios de la historia.
@@ -182,24 +214,31 @@ public class GameManager : MonoBehaviour
         ActualitzaEstatGameManagerInsrucciones();
     }
 
+    public void PassarATexto2Final(){
+        _estatGameManagerHistoriaFinal = EstatsGameManagerHistoriaFinal.FinalParte2;
+        ActualitzaEstatGameManagerHistoriaFinal();
+    }
+
     public void PassarAEscena2()
     {
-        Debug.Log("Click OK");
         if (contador == 1)
         {
             _estatGameManagerHistoria = EstatsGameManagerHistoria.escena2;
             CambiarEscenaHistoria();
         }
-        else if(contador == 2){
-             _estatGameManagerHistoria = EstatsGameManagerHistoria.escena3;
+        else if (contador == 2)
+        {
+            _estatGameManagerHistoria = EstatsGameManagerHistoria.escena3;
             CambiarEscenaHistoria();
         }
-        else if(contador == 3){
-             _estatGameManagerHistoria = EstatsGameManagerHistoria.escena4;
+        else if (contador == 3)
+        {
+            _estatGameManagerHistoria = EstatsGameManagerHistoria.escena4;
             CambiarEscenaHistoria();
         }
-        else if(contador == 4){
-             _estatGameManagerHistoria = EstatsGameManagerHistoria.escena5;
+        else if (contador == 4)
+        {
+            _estatGameManagerHistoria = EstatsGameManagerHistoria.escena5;
             CambiarEscenaHistoria();
         }
 

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,4 +12,7 @@ public static class GlobalData
     public static bool[] monedasCogidas = new bool[20];
     public static bool[] cofreAbierto=new bool[20];
     public static bool cuervoVisto = false;//Cuervo
+    public static int vidas;//Sistema de vidas
+    
+    
 }
